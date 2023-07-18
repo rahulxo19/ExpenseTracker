@@ -1,38 +1,30 @@
 import './App.css';
 
-import ExpenseItem from './components/ExpenseItem';
+import Expenses from './components/Expenses/Expenses';
 
 function App() {
   const expenses = [
     {
-      date: '2023-07-01',
-      title: 'Groceries',
-      location: 'Supermarket XYZ',
-      amount: 50.75,
+      id: 'e1',
+      title: 'Toilet Paper',
+      location: 'abc',
+      amount: 94.12,
+      date: new Date(2020, 7, 14),
+    },
+    { id: 'e2', title: 'New TV', amount: 799.49, location: 'abc', date: new Date(2021, 2, 12) },
+    {
+      id: 'e3',
+      title: 'Car Insurance',
+      location: 'abc',
+      amount: 294.67,
+      date: new Date(2021, 2, 28),
     },
     {
-      date: '2023-07-02',
-      title: 'Eating Out',
-      location: 'Restaurant ABC',
-      amount: 30.99,
-    },
-    {
-      date: '2023-07-03',
-      title: 'Clothing',
-      location: 'Fashion Store DEF',
-      amount: 80.50,
-    },
-    {
-      date: '2023-07-04',
-      title: 'Gasoline',
-      location: 'Gas Station GHI',
-      amount: 45.25,
-    },
-    {
-      date: '2023-07-05',
-      title: 'Entertainment',
-      location: 'Movie Theater JKL',
-      amount: 25.50,
+      id: 'e4',
+      title: 'New Desk (Wooden)',
+      location: 'abc',
+      amount: 450,
+      date: new Date(2021, 5, 12),
     },
   ];
   
@@ -40,9 +32,8 @@ function App() {
     <div>
       <h2>Let's get started!</h2>
 
-        { expenses.map((value, index) => 
-          <ExpenseItem date={value.date} title={value.title} location={value.location} amount={value.amount}></ExpenseItem>
-        )}
+          <Expenses items={expenses}></Expenses>
+
 
     </div>
   );
