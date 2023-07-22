@@ -24,6 +24,7 @@ const Expenses = (props) => {
         key={expense.id}
         title={expense.title}
         amount={expense.amount}
+        location={expense.location}
         date={expense.date}
       />
     ));
