@@ -1,0 +1,49 @@
+
+
+.aligning {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up {
+    margin: 15px auto 15px auto;
+}
+
+  .submit {
+    display: flex;
+    justify-content: center;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 325px;
+    height: 400px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 1rem;
+  }
+
+  .form-floating {
+    margin: auto 10px auto 10px;
+  }
+
+  .submit-button {
+    margin: auto 10px 20px 10px;
+    border-radius: 2rem;
+  }
+
+  .login {
+    display: flex;
+    margin-top: 20px;
+    width: 325px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    background-color: rgb(223, 255, 223);
+    border-radius: 0.5rem;
+  }
